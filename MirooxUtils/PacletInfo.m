@@ -9,7 +9,16 @@ Paclet[
     {
       "Kernel",
       "Context"->{"MirooxUtils`"},
-      "Symbols"->{"MirooxUtils`Tic","MirooxUtils`Toc"}
+      "Symbols"->{
+        "System`$PreFunctions","System`$Pre",
+        "System`Subscript","System`Derivative",
+        "System`Clear","System`ClearAll",
+        "MirooxUtils`LimitMemory",
+        "MirooxUtils`Tic","MirooxUtils`Toc",
+        "MirooxUtils`BeginSessionTiming",
+        "MirooxUtils`EndSessionTiming",
+        "MirooxUtils`EchoSessionTiming"
+      }
     }
   }
 ]
