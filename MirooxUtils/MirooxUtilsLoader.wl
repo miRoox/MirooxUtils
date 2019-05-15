@@ -10,6 +10,7 @@ Get["Derivative.wl"]
 Get["Clear.wl"]
 
 Get["RubiConfig.wl"]
+Get["ForScienceConfig.wl"]
 
 Get["LimitMemory.wl"]
 Get["Macros.wl"]
