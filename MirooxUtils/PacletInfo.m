@@ -19,7 +19,7 @@ Paclet[
         "MirooxUtils`EndSessionTiming",
         "MirooxUtils`EchoSessionTiming"
       }
-    }，
+    },
     {
       "FrontEnd",
       "Prepend"->True
