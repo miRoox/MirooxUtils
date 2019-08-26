@@ -7,7 +7,7 @@ SetUsage[SetByRules,
   "With[SetByRules[rules$],body$] replace '->' to '=' and ':>' to ':=' in rules$ as local variable list."
 ]
 
-SetAttributes[Inline,{ReadProtected}]
+SetAttributes[SetByRules,{ReadProtected}]
 
 Begin["`SetByRules`"]
 
