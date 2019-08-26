@@ -13,7 +13,7 @@ Begin["`SetByRules`"]
 
 iSetByRules[rules : {(_Rule|_RuleDelayed)...}] := Unevaluated@Unevaluated[rules] /. {Rule->Set, RuleDelayed->SetDelayed}
 
-SetByRules[rule : (_Rule|_RuleDelayed)] := First@SetByRules[{rules}]
+SetByRules[rule : (_Rule|_RuleDelayed)] := First@SetByRules[{rule}]
 SetByRules[rules : {(_Rule|_RuleDelayed)...}] := Identity@@iSetByRules[rules]
 SetByRules[rules : {__List}] := SetByRules/@rules
 
