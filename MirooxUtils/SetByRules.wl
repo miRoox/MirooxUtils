@@ -13,8 +13,9 @@ Begin["`SetByRules`"]
 
 iSetByRules[rules : {(_Rule|_RuleDelayed)...}] := Unevaluated@Unevaluated[rules] /. {Rule->Set, RuleDelayed->SetDelayed}
 
-SetByRules[rule : (_Rule|_RuleDelayed)]:=First@SetByRules[{rules}]
+SetByRules[rule : (_Rule|_RuleDelayed)] := First@SetByRules[{rules}]
 SetByRules[rules : {(_Rule|_RuleDelayed)...}] := Identity@@iSetByRules[rules]
+SetByRules[rules : {__List}] := SetByRules/@rules
 
 SetByRules /: With[SetByRules[rules_],body__] := With[{vars=iSetByRules[rules]},With[vars,body]/;MatchQ[vars,_List]]
 
