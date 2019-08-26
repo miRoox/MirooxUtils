@@ -3,8 +3,8 @@
 BeginPackage["MirooxUtils`",{"GeneralUtilities`"}]
 
 SetUsage[SetByRules,
-  "SetByRules[rules$] replace '->' to '=' and ':>' to ':=' in rules$, and then evaluate it.",
-  "With[SetByRules[rules$],body$] replace '->' to '=' and ':>' to ':=' in rules$ as local variable list."
+  "SetByRules[rules$] assignment according to the rules$.",
+  "With[SetByRules[rules$],body$] use rules$ as a local variable list.."
 ]
 
 SetAttributes[SetByRules,{ReadProtected}]
