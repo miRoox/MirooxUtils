@@ -17,7 +17,13 @@ SetByRules[rule : (_Rule|_RuleDelayed)] := First@SetByRules[{rules}]
 SetByRules[rules : {(_Rule|_RuleDelayed)...}] := Identity@@iSetByRules[rules]
 SetByRules[rules : {__List}] := SetByRules/@rules
 
-SetByRules /: With[SetByRules[rules_],body__] := With[{vars=iSetByRules[rules]},With[vars,body]/;MatchQ[vars,_List]]
+SetByRules /: With[SetByRules[rules_],body__] := With[{vars=iSetByRules[rules]},
+  With[vars,body]/;MatchQ[vars,_List]
+]
+
+SetByRules /: (scope:Block|Module)[SetByRules[rules_],body_] := With[{vars=iSetByRules[rules]},
+  scope[vars,body]/;MatchQ[vars,_List]
+]
 
 End[]
 
