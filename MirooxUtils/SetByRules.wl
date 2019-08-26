@@ -4,7 +4,7 @@ BeginPackage["MirooxUtils`",{"GeneralUtilities`"}]
 
 SetUsage[SetByRules,
   "SetByRules[rules$] assignment according to the rules$.",
-  "With[SetByRules[rules$],body$] use rules$ as a local variable list.."
+  "With[SetByRules[rules$],body$] use rules$ as a local variable list."
 ]
 
 SetAttributes[SetByRules,{ReadProtected}]
