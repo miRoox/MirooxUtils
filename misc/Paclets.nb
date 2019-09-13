@@ -1,0 +1,541 @@
+Notebook[
+ {
+  Cell[
+   CellGroupData[
+    {
+     Cell["Paclets", "Title"],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Builtin", "Subsection"],
+        Cell[
+         CellGroupData[
+          {
+           Cell["MXNet", "Subsubsection"],
+           Cell[
+            BoxData[
+             {
+              RowBox[{"Needs", "[", "\"MXNetLink`\"", "]"}],
+              "\n",
+              RowBox[
+               {
+                "MXNetResourcesInstall",
+                "[",
+                RowBox[
+                 {
+                  "MXNetResourcesInstall",
+                  ",",
+                  RowBox[{"\"AllowUpdate\"", "\[Rule]", "True"}]
+                 }
+                ],
+                "]"
+               }
+              ]
+             }
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Closed
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["3rd-party", "Subsection"],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "MPM",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/kubaPod/MPM"], None},
+              ButtonNote -> "https://github.com/kubaPod/MPM"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "Import",
+               "[",
+               "\"https://raw.githubusercontent.com/kubapod/mpm/master/install.m\"",
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ],
+           Cell[
+            BoxData[RowBox[{"Needs", "[", "\"MPM`\"", "]"}]],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "DevTools",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/kubaPod/DevTools"], None},
+              ButtonNote -> "https://github.com/kubaPod/DevTools"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[{"\"kubapod\"", ",", " ", "\"devtools\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ],
+           Cell["Setup dark stylesheet with all features:", "Text"],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[
+                {
+                 "CurrentValue",
+                 "[",
+                 RowBox[
+                  {
+                   "$FrontEnd",
+                   ",",
+                   " ",
+                   "\"DefaultPackageStyleDefinitions\""
+                  }
+                 ],
+                 "]"
+                }
+               ],
+               " ",
+               "=",
+               " ",
+               RowBox[
+                {
+                 "FrontEnd`FileName",
+                 "[",
+                 RowBox[
+                  {
+                   "{",
+                   RowBox[{"\"DevTools\"", ",", " ", "\"DevPackageDark.nb\""}],
+                   "}"
+                  }
+                 ],
+                 "]"
+                }
+               ]
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "ForScience",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/MMA-ForScience/ForScience"], None},
+              ButtonNote -> "https://github.com/MMA-ForScience/ForScience"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[
+                {
+                 "\"MMA-ForScience\"",
+                 ",",
+                 "\"ForScience\"",
+                 ",",
+                 RowBox[{"\"AllowPrereleases\"", "\[Rule]", "True"}]
+                }
+               ],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "Rubi",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {
+               URL["https://rulebasedintegration.org/downloadRubi.html"],
+               None
+              },
+              ButtonNote -> "https://rulebasedintegration.org/downloadRubi.html"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "PacletInstall",
+               "[",
+               "\"https://rulebasedintegration.org/Rubi-4.16.1.0.paclet\"",
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "BoolEval",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/szhorvat/BoolEval"], None},
+              ButtonNote -> "https://github.com/szhorvat/BoolEval"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[{"\"szhorvat\"", ",", "\"BoolEval\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "MaTeX",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/szhorvat/MaTeX"], None},
+              ButtonNote -> "https://github.com/szhorvat/MaTeX"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[{"\"szhorvat\"", ",", "\"MaTeX\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "Cells to TeX",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {
+               URL["https://github.com/jkuczm/MathematicaCellsToTeX"],
+               None
+              },
+              ButtonNote -> "https://github.com/jkuczm/MathematicaCellsToTeX"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[{"\"jkuczm\"", ",", "\"MathematicaCellsToTeX\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "Prototypes",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/arnoudbuzing/prototypes"], None},
+              ButtonNote -> "https://github.com/arnoudbuzing/prototypes"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[
+                {
+                 "\"arnoudbuzing\"",
+                 ",",
+                 "\"Prototypes\"",
+                 ",",
+                 RowBox[{"\"AllowPrereleases\"", "\[Rule]", "True"}]
+                }
+               ],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "LSP",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/kenkangxgwe/lsp-wl"], None},
+              ButtonNote -> "https://github.com/kenkangxgwe/lsp-wl"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            "git clone https://github.com/kenkangxgwe/lsp-wl.git",
+            "Program"
+           ],
+           Cell[
+            BoxData[
+             {
+              RowBox[
+               {
+                "PacletInstall",
+                "[",
+                RowBox[
+                 {
+                  "\"AST\"",
+                  ",",
+                  " ",
+                  RowBox[
+                   {
+                    "\"Site\"",
+                    " ",
+                    "->",
+                    " ",
+                    "\"http://pacletserver.wolfram.com\""
+                   }
+                  ],
+                  ",",
+                  " ",
+                  RowBox[{"\"UpdateSites\"", " ", "->", " ", "True"}]
+                 }
+                ],
+                "]"
+               }
+              ],
+              "\n",
+              RowBox[
+               {
+                "PacletInstall",
+                "[",
+                RowBox[
+                 {
+                  "\"Lint\"",
+                  ",",
+                  " ",
+                  RowBox[
+                   {
+                    "\"Site\"",
+                    " ",
+                    "->",
+                    " ",
+                    "\"http://pacletserver.wolfram.com\""
+                   }
+                  ],
+                  ",",
+                  " ",
+                  RowBox[{"\"UpdateSites\"", " ", "->", " ", "True"}]
+                 }
+                ],
+                "]"
+               }
+              ]
+             }
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Closed
+      ]
+     ],
+     Cell[
+      CellGroupData[
+       {
+        Cell["Official external", "Subsection"],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "GitLink",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/WolframResearch/GitLink"], None},
+              ButtonNote -> "https://github.com/WolframResearch/GitLink"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[{"\"WolframResearch\"", ",", "\"GitLink\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "Wolfram Language kernel for Jupyter notebooks",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {
+               URL[
+                "https://github.com/WolframResearch/WolframLanguageForJupyter"
+               ],
+               None
+              },
+              ButtonNote -> "https://github.com/WolframResearch/WolframLanguageForJupyter"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               "MPM`MPMInstall",
+               "[",
+               RowBox[
+                {
+                 "\"WolframResearch\"",
+                 ",",
+                 "\"WolframLanguageForJupyter\"",
+                 ",",
+                 RowBox[{"\"AllowPrereleases\"", "\[Rule]", "True"}]
+                }
+               ],
+               "]"
+              }
+             ]
+            ],
+            "Code"
+           ]
+          },
+          Closed
+         ]
+        ]
+       },
+       Closed
+      ]
+     ]
+    },
+    Open
+   ]
+  ]
+ },
+ StyleDefinitions -> "Default.nb"
+]
