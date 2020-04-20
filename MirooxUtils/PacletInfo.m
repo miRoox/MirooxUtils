@@ -4,7 +4,7 @@ Paclet[
   WolframVersion->"12+",
   Creator->"miRoox <miRoox@outlook.com>",
   Description->"Program utilities",
-  Loading->Automatic,
+  Loading->Manual,
   Extensions->{
     {
       "Kernel",
