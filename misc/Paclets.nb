@@ -100,7 +100,7 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "MPM`MPMInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
                RowBox[{"\"kubapod\"", ",", " ", "\"devtools\""}],
                "]"
@@ -215,9 +215,9 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "PacletInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
-               "\"https://rulebasedintegration.org/Rubi-4.16.1.0.paclet\"",
+               RowBox[{"\"RuleBasedIntegration\"", ",", "\"Rubi\""}],
                "]"
               }
              ]
@@ -246,7 +246,7 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "MPM`MPMInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
                RowBox[{"\"szhorvat\"", ",", "\"BoolEval\""}],
                "]"
@@ -277,7 +277,7 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "MPM`MPMInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
                RowBox[{"\"szhorvat\"", ",", "\"MaTeX\""}],
                "]"
@@ -311,7 +311,7 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "MPM`MPMInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
                RowBox[{"\"jkuczm\"", ",", "\"MathematicaCellsToTeX\""}],
                "]"
@@ -357,7 +357,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> ""
            ]
           },
           Closed
