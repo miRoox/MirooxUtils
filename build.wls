@@ -19,7 +19,7 @@ Catch[
     <<"src/makeNotebookTools.wls"
   ],
   return,
-  Function[{value, tag}, Exit[value]]
+  Function[{value, tag}, Quit[value]]
 ]
 
 paclet=If[$VersionNumber>=12.1,
