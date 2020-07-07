@@ -1,0 +1,22 @@
+name: CI
+on: 
+  push:
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .editorconfig
+      - .gitignore
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Build
+      id: build
+      uses: miRoox/wolfram-action@v1
+      with:
+        file: build.wls
+      env:
+        WOLFRAM_ID: ${{ secrets.WOLFRAMID }}
+        WOLFRAM_PASS: ${{ secrets.WOLFRAMPW }}
