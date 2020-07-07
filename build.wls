@@ -1,0 +1,29 @@
+#!/usr/bin/env wolframscript
+(* ::Package:: *)
+
+return[exitcode_:0]:=If[
+  exitcode=!=0,
+  Throw[exitcode, return]
+]
+
+Catch[
+  Block[{Exit=return},
+    <<"src/makeNotebookTools.wls"
+  ],
+  return,
+  Function[{value, tag}, Exit[value]]
+]
+
+$pacletDir=FileNameJoin@{DirectoryName[$InputFileName], "MirooxUtils"}
+
+paclet=If[$VersionNumber>=12.1,
+  System`CreatePacletArchive[$pacletDir],
+  PacletManager`PackPaclet[$pacletDir]
+];
+
+If[FailureQ@paclet,
+  Exit[1],
+  Print["::set-output name=name::", FileNameTake@paclet];
+]
+
+Exit[]
