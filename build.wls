@@ -1,6 +1,14 @@
 #!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+
+$pacletDir=FileNameJoin@{DirectoryName[$InputFileName], "MirooxUtils"}
+
+If[$VersionNumber>=12.1,
+  System`PacletDirectoryLoad[$pacletDir],
+  PacletManager`PacletDirectoryAdd[$pacletDir]
+]
+
 return[exitcode_:0]:=If[
   exitcode=!=0,
   Throw[exitcode, return]
@@ -13,8 +21,6 @@ Catch[
   return,
   Function[{value, tag}, Exit[value]]
 ]
-
-$pacletDir=FileNameJoin@{DirectoryName[$InputFileName], "MirooxUtils"}
 
 paclet=If[$VersionNumber>=12.1,
   System`CreatePacletArchive[$pacletDir],
