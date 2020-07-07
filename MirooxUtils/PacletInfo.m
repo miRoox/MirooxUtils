@@ -1,6 +1,6 @@
 Paclet[
   Name->"MirooxUtils",
-  Version->"0.0.0",
+  Version->"0.1.0",
   WolframVersion->"12+",
   Creator->"miRoox <miRoox@outlook.com>",
   Description->"Program utilities",
