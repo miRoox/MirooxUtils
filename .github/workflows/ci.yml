@@ -20,3 +20,8 @@ jobs:
       env:
         WOLFRAM_ID: ${{ secrets.WOLFRAMID }}
         WOLFRAM_PASS: ${{ secrets.WOLFRAMPW }}
+    - name: Upload Paclet Archive File
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ steps.build.outputs.name }}
+        path: ./${{ steps.build.outputs.name }}
