@@ -38,7 +38,7 @@ Check[
       WindowTitle->"Notebook Tools",
       WindowSize->All
     ];
-    ResourceFunction["SaveReadableNotebook"][palette,$path,"ExcludedNotebookOptions"->{}]
+    ResourceFunction["SaveReadableNotebook"][palette,ResourceFunction["EnsureFilePath"][$path],"ExcludedNotebookOptions"->{}]
   ],
   End[];
   Exit[1]
