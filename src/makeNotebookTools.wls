@@ -29,20 +29,18 @@ saveReadableNotebookButton=MirooxUtils`Inline[
   ]
 ]
 
-Check[
-  UsingFrontEnd[
-    palette=CreatePalette[
-      Grid[{{
-        saveReadableNotebookButton
-      }}],
-      WindowTitle->"Notebook Tools",
-      WindowSize->All
-    ];
-    ResourceFunction["SaveReadableNotebook"][palette,ResourceFunction["EnsureFilePath"][$path],"ExcludedNotebookOptions"->{}]
-  ],
-  End[];
-  Exit[1]
-]
+MakePalette[expr_,title_]:=TemplateApply[<<src/PaletteTemplate.wl,<|
+  "Boxes"->MakeBoxes[expr],
+  "WindowTitle"->title
+|>]
+
+palette=MakePalette[
+  Grid[{{
+    saveReadableNotebookButton
+  }}],
+  "Notebook Tools"
+];
+ResourceFunction["SaveReadableNotebook"][palette,ResourceFunction["EnsureFilePath"][$path],"ExcludedNotebookOptions"->{}]
 
 End[]
 Exit[]
