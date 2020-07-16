@@ -72,11 +72,13 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[4]:="
            ],
            Cell[
             BoxData[RowBox[{"Needs", "[", "\"MPM`\"", "]"}]],
-            "Code"
+            "Code",
+            CellLabel -> "In[5]:="
            ]
           },
           Closed
@@ -107,7 +109,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[12]:="
            ],
            Cell["Setup dark stylesheet with all features:", "Text"],
            Cell[
@@ -149,7 +152,40 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[13]:="
+           ]
+          },
+          Closed
+         ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "M2MD",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/kubaPod/M2MD"], None},
+              ButtonNote -> "https://github.com/kubaPod/M2MD"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
+               "[",
+               RowBox[{"\"kubapod\"", ",", "\"m2md\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code",
+            CellLabel -> "In[15]:="
            ]
           },
           Closed
@@ -188,7 +224,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[11]:="
            ]
           },
           Closed
@@ -222,7 +259,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[3]:="
            ]
           },
           Closed
@@ -253,7 +291,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[10]:="
            ]
           },
           Closed
@@ -284,7 +323,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[9]:="
            ]
           },
           Closed
@@ -391,7 +431,7 @@ Notebook[
                 "[",
                 RowBox[
                  {
-                  "\"AST\"",
+                  "\"CodeParser\"",
                   ",",
                   " ",
                   RowBox[
@@ -418,7 +458,7 @@ Notebook[
                 "[",
                 RowBox[
                  {
-                  "\"Lint\"",
+                  "\"CodeInspector\"",
                   ",",
                   " ",
                   RowBox[
@@ -440,7 +480,8 @@ Notebook[
               ]
              }
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[7]:="
            ]
           },
           Closed
@@ -472,14 +513,15 @@ Notebook[
             BoxData[
              RowBox[
               {
-               "MPM`MPMInstall",
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
                "[",
                RowBox[{"\"WolframResearch\"", ",", "\"GitLink\""}],
                "]"
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[6]:="
            ]
           },
           Closed
@@ -523,7 +565,8 @@ Notebook[
               }
              ]
             ],
-            "Code"
+            "Code",
+            CellLabel -> "In[14]:="
            ]
           },
           Closed
