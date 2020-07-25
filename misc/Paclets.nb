@@ -571,6 +571,38 @@ Notebook[
           },
           Closed
          ]
+        ],
+        Cell[
+         CellGroupData[
+          {
+           Cell[
+            TextData[
+             ButtonBox[
+              "CSSTools",
+              BaseStyle -> "Hyperlink",
+              ButtonData -> {URL["https://github.com/WolframResearch/CSSTools"], None},
+              ButtonNote -> "https://github.com/WolframResearch/CSSTools"
+             ]
+            ],
+            "Subsubsection"
+           ],
+           Cell[
+            BoxData[
+             RowBox[
+              {
+               RowBox[{"ResourceFunction", "[", "\"GitHubInstall\"", "]"}],
+               "[",
+               RowBox[{"\"WolframResearch\"", ",", "\"CSSTools\""}],
+               "]"
+              }
+             ]
+            ],
+            "Code",
+            CellLabel -> "In[2]:="
+           ]
+          },
+          Closed
+         ]
         ]
        },
        Closed
