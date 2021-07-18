@@ -16,7 +16,7 @@ jobs:
       id: build
       uses: miRoox/wolfram-action@v1
       with:
-        file: build.wls
+        file: scripts/build.wls
       env:
         WOLFRAM_ID: ${{ secrets.WOLFRAMID }}
         WOLFRAM_PASS: ${{ secrets.WOLFRAMPW }}

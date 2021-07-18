@@ -2,7 +2,7 @@
 (* ::Package:: *)
 
 
-$pacletDir=FileNameJoin@{DirectoryName[$InputFileName], "MirooxUtils"}
+$pacletDir=FileNameJoin@{DirectoryName[$InputFileName, 2], "MirooxUtils"}
 
 If[$VersionNumber>=12.1,
   System`PacletDirectoryLoad[$pacletDir],
@@ -16,7 +16,7 @@ return[exitcode_:0]:=If[
 
 Catch[
   Block[{Exit=return},
-    <<"src/makeNotebookTools.wls"
+    Get@FileNameJoin@{DirectoryName[$InputFileName], "makeNotebookTools.wls"}
   ],
   return,
   Function[{value, tag}, Quit[value]]
