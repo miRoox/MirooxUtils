@@ -29,11 +29,6 @@ saveReadableNotebookButton=MirooxUtils`Inline[
   ]
 ]
 
-MakePalette[expr_,title_]:=TemplateApply[<<src/PaletteTemplate.wl,<|
-  "Boxes"->MakeBoxes[expr],
-  "WindowTitle"->title
-|>]
-
 palette=MakePalette[
   Grid[{{
     saveReadableNotebookButton

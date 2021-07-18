@@ -23,6 +23,13 @@ Paclet[
     {
       "FrontEnd",
       "Prepend"->True
+    },
+    {
+      "Resource",
+      Root->"Resources",
+      Resources->{
+        {"PaletteTemplate", "PaletteTemplate.wl"}
+      }
     }
   }
 ]
