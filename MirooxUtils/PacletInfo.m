@@ -1,6 +1,6 @@
 Paclet[
   Name->"MirooxUtils",
-  Version->"0.1.0",
+  Version->"0.2.0",
   WolframVersion->"12+",
   Creator->"miRoox <miRoox@outlook.com>",
   Description->"Program utilities",
@@ -17,7 +17,8 @@ Paclet[
         "MirooxUtils`Tic","MirooxUtils`Toc",
         "MirooxUtils`BeginSessionTiming",
         "MirooxUtils`EndSessionTiming",
-        "MirooxUtils`EchoSessionTiming"
+        "MirooxUtils`EchoSessionTiming",
+        "MirooxUtils`MakePalette"
       }
     },
     {
