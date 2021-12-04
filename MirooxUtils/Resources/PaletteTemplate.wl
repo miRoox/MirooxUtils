@@ -4,6 +4,7 @@ Notebook[
    BoxData[
     TemplateSlot["Boxes"]
    ],
+   TemplateSequence[TemplateSlot[1], TemplateSlot["CellOptions"]],
    CellMargins -> {{0, 0}, {0, 0}},
    CellBracketOptions -> {"Color" -> RGBColor[0.269993, 0.308507, 0.6]},
    CellHorizontalScrolling -> True,
@@ -18,6 +19,7 @@ Notebook[
    FontSize :> CurrentValue["PanelFontSize"]
   ]
  },
+ TemplateSequence[TemplateSlot[1], TemplateSlot["NotebookOptions"]],
  WindowSize -> All,
  WindowMargins -> {{Automatic, 0}, {Automatic, 0}},
  WindowElements -> { },

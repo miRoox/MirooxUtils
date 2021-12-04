@@ -6,14 +6,20 @@ SetUsage[MakePalette,
   "MakePalette[expr$, title$] create palette notebook based on expr$ and title$."
 ]
 
+Options[MakePalette]={
+  "CellOptions"->{},
+  "NotebookOptions"->{}
+}
+
 SetAttributes[MakePalette,{ReadProtected}]
 
 Begin["`MakePalette`"]
 
-MakePalette[expr_,title_]:=TemplateApply[Get@PacletManager`PacletResource["MirooxUtils", "PaletteTemplate"],<|
+MakePalette[expr_,title_,opts:OptionsPattern[]]:=TemplateApply[Get@PacletManager`PacletResource["MirooxUtils", "PaletteTemplate"], Merge[{
   "Boxes"->MakeBoxes[expr],
-  "WindowTitle"->title
-|>]
+  "WindowTitle"->title,
+  opts
+}, Last]]
 
 End[]
 

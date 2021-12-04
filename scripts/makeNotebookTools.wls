@@ -33,7 +33,10 @@ palette=MakePalette[
   Grid[{{
     saveReadableNotebookButton
   }}],
-  "Notebook Tools"
+  "Notebook Tools",
+  "NotebookOptions" -> {
+    TaggingRules -> {}
+  }
 ];
 ResourceFunction["SaveReadableNotebook"][palette,ResourceFunction["EnsureFilePath"][$path],"ExcludedNotebookOptions"->{}]
 
