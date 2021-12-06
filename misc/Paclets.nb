@@ -225,7 +225,7 @@ Notebook[
              ]
             ],
             "Code",
-            CellLabel -> "In[11]:="
+            CellLabel -> "In[6]:="
            ]
           },
           Closed
@@ -260,7 +260,7 @@ Notebook[
              ]
             ],
             "Code",
-            CellLabel -> "In[3]:="
+            CellLabel -> "In[1]:="
            ]
           },
           Closed
@@ -425,63 +425,16 @@ Notebook[
            Cell[
             BoxData[
              {
-              RowBox[
-               {
-                "PacletInstall",
-                "[",
-                RowBox[
-                 {
-                  "\"CodeParser\"",
-                  ",",
-                  " ",
-                  RowBox[
-                   {
-                    "\"Site\"",
-                    " ",
-                    "->",
-                    " ",
-                    "\"http://pacletserver.wolfram.com\""
-                   }
-                  ],
-                  ",",
-                  " ",
-                  RowBox[{"\"UpdateSites\"", " ", "->", " ", "True"}]
-                 }
-                ],
-                "]"
-               }
-              ],
+              RowBox[{"PacletInstall", "[", "\"CodeParser\"", "]"}],
               "\n",
-              RowBox[
-               {
-                "PacletInstall",
-                "[",
-                RowBox[
-                 {
-                  "\"CodeInspector\"",
-                  ",",
-                  " ",
-                  RowBox[
-                   {
-                    "\"Site\"",
-                    " ",
-                    "->",
-                    " ",
-                    "\"http://pacletserver.wolfram.com\""
-                   }
-                  ],
-                  ",",
-                  " ",
-                  RowBox[{"\"UpdateSites\"", " ", "->", " ", "True"}]
-                 }
-                ],
-                "]"
-               }
-              ]
+              RowBox[{"PacletInstall", "[", "\"CodeInspector\"", "]"}],
+              "\n",
+              RowBox[{"PacletInstall", "[", "\"CodeFormatter\"", "]"}],
+              "\n",
+              RowBox[{"PacletInstall", "[", "\"LSPServer\"", "]"}]
              }
             ],
-            "Code",
-            CellLabel -> "In[7]:="
+            "Code"
            ]
           },
           Closed
@@ -609,9 +562,10 @@ Notebook[
       ]
      ]
     },
-    Open
+    Closed
    ]
   ]
  },
+ TaggingRules -> <|"TryRealOnly" -> False|>,
  StyleDefinitions -> "Default.nb"
 ]
