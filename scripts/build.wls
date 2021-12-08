@@ -31,5 +31,3 @@ If[FailureQ@paclet,
   Exit[1],
   Print["::set-output name=name::", FileNameTake@paclet];
 ]
-
-Exit[]

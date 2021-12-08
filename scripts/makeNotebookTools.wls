@@ -41,4 +41,3 @@ palette=MakePalette[
 ResourceFunction["SaveReadableNotebook"][palette,ResourceFunction["EnsureFilePath"][$path],"ExcludedNotebookOptions"->{}]
 
 End[]
-Exit[]
