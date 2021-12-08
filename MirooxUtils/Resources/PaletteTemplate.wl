@@ -20,9 +20,13 @@ Notebook[
   ]
  },
  TemplateSequence[TemplateSlot[1], TemplateSlot["NotebookOptions"]],
+ CellContext-> TemplateSlot["CellContext", DefaultValue :> $Context],
+ Magnification -> 1.0,
+ DynamicUpdating -> True,
  WindowSize -> All,
  WindowMargins -> {{Automatic, 0}, {Automatic, 0}},
  WindowElements -> { },
  WindowTitle -> TemplateSlot["WindowTitle", "DefaultValue"->"Untitled"],
+ FrontEndVersion -> TemplateSlot["FrontEndVersion", DefaultValue :> $Version],
  StyleDefinitions -> "Palette.nb"
 ]

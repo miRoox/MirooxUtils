@@ -8,7 +8,8 @@ SetUsage[MakePalette,
 
 Options[MakePalette]={
   "CellOptions"->{},
-  "NotebookOptions"->{}
+  "NotebookOptions"->{},
+  "CellContext"->Automatic
 }
 
 SetAttributes[MakePalette,{ReadProtected}]
